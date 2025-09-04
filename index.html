@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Diarizada</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+        <div class="container">
+        <h2>📊 Calculadora de Meta</h2>
+
+            <input type="number" id="meta" placeholder="Meta do mês (X)">
+            <input type="number" id="vendido" placeholder="Já vendido (Y)">
+            <input type="number" id="dias" placeholder="Dias restantes (Z)">
+
+                <button onclick="calcular()">Calcular</button>
+
+        <div class="card">
+            <div>Restante para a meta</div>
+            <div id="restante" class="valor">0</div>
+        </div>
+
+        <div class="card highlight">
+            <div>Necessário por dia</div>
+            <div id="diario" class="valor">0</div>
+            </div>
+        </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
+        }
+    </script>
+
+
+</body>
+</html>
