@@ -50,6 +50,16 @@ body {
       background: #45a049;
     }
 
+    .btn-clear {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    .btn-clear:hover{
+      cursor: pointer;
+      background-color: #d6182b;
+    }
+
     .card {
       margin-top: 16px;
       padding: 16px;
