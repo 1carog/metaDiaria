@@ -22,14 +22,6 @@
     if(localStorage.getItem("dias")) document.getElementById("dias").value = localStorage.getItem("dias");
   }
 
-    function limpar() {
-      document.getElementById("meta").value = "";
-      document.getElementById("vendido").value = "";
-      document.getElementById("dias").value = "";
-      document.getElementById("restante").textContent = "0";
-      document.getElementById("porDia").textContent = "0";
-    }
-
   // ATUALIZAÇÃO
     {
       const restante = X - Y;
